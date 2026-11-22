@@ -2,7 +2,7 @@
 
 A self-hosted Discord bot I built for a server. It started as a way to search a shared photo library from Discord, then grew a music player, a YouTube downloader, and a set of local LLM models I had trained on our own chat history so the bot can talk like another user
 
-Nothing goes to a cloud API. The bot runs on a small Ubuntu box at home (an Intel i3-10100 with integrated graphics, no dedicated GPU) and connects to services I already self-host in Docker: **Ollama** for the language models, **Immich** for photos and videos, and **slskd** for Soulseek.
+Nothing goes to a cloud API. The bot runs on a small Ubuntu NAS (an Intel i3-10100 with integrated graphics, no dedicated GPU) and connects to services I already self-host in Docker: **Ollama** for the language models, **Immich** for photos and videos, and **slskd** for Soulseek.
 
 > This is a personal project, not a polished product. It works well for one server on one machine. If you want to run it yourself, expect to spend a bit of time getting the paths and API keys right.
 
