@@ -1,6 +1,6 @@
 # Juggers
 
-A self-hosted Discord bot I built for my friends' server. It started as a way to search our shared photo library from Discord, then grew a music player, a YouTube downloader, and a set of local LLMs I fine-tuned on our own chat history so the bot can talk like (some of) us.
+A self-hosted Discord bot I built for a server. It started as a way to search a shared photo library from Discord, then grew a music player, a YouTube downloader, and a set of local LLM models I had trained on our own chat history so the bot can talk like another user
 
 Nothing goes to a cloud API. The bot runs on a small Ubuntu box at home (an Intel i3-10100 with integrated graphics, no dedicated GPU) and connects to services I already self-host in Docker: **Ollama** for the language models, **Immich** for photos and videos, and **slskd** for Soulseek.
 
