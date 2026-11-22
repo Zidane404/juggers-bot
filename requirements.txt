@@ -1,0 +1,7 @@
+discord.py[voice]
+aiohttp
+requests
+openai
+yt-dlp
+psutil
+python-dotenv

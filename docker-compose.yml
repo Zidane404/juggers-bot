@@ -1,0 +1,18 @@
+# Runs just the bot. Ollama, Immich and slskd are expected to already be running
+# (in my case they each have their own compose stack on the same box).
+services:
+  juggers:
+    build: .
+    container_name: juggers
+    restart: unless-stopped
+    env_file: .env
+    # Host networking keeps the default localhost URLs working for Ollama/Immich/slskd.
+    # If you'd rather use a shared Docker network, drop this and point the *_URL
+    # variables at the container names instead (e.g. http://slskd:5030).
+    network_mode: host
+    volumes:
+      - ./personas.json:/app/personas.json:ro
+      - ./data:/app/data
+      # Must be the SAME path inside and outside the container, because the bot
+      # looks up the files slskd downloads using their host paths.
+      - ${SLSKD_DOWNLOADS_LOCAL}:${SLSKD_DOWNLOADS_LOCAL}

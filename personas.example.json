@@ -1,0 +1,13 @@
+{
+  "models": {
+    "default": {
+      "model_name": "richardyoung/qwen2.5-3b-instruct-abliterated",
+      "prompt": "You are an assistant called juggers"
+    },
+    "friend-a": {
+      "model_name": "friend-a-model",
+      "prompt": "You are friend-a chatting with your friends in a Discord server. Respond to the conversation naturally. Output ONLY your own direct response. NEVER generate chat logs, timestamps, or mimic other users' names."
+    }
+  },
+  "stop_prefixes": ["juggers:", "friend-a:", "friend-b:"]
+}
